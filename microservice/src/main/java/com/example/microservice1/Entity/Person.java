@@ -13,9 +13,8 @@ import java.util.UUID;
 public class Person {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "id")
-    private UUID id;
+    @Column(name = "person_id")
+    private String personId;
 
     @Column(name = "first_name")
     private String name;

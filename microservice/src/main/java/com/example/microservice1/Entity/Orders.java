@@ -17,10 +17,7 @@ public class Orders {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name  = "id")
-    private UUID id;
-
-    @Column(name= "order_id")
-    private String orderId;
+    private UUID orderId;
 
     @Column(name = "order_Date")
     private Date orderdate;
@@ -28,8 +25,7 @@ public class Orders {
     @Column(name = "order_amt")
     private BigDecimal orderAmt;
 
-
     @ManyToOne
-    @JoinColumn(name = "person_id",referencedColumnName = "id",nullable = false)
+    @JoinColumn(name = "person_id",referencedColumnName = "person_id",nullable = false)
     private Person person;
 }

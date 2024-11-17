@@ -1,4 +1,4 @@
-package com.example.microservice1;
+package com.example.microservice1.Model;
 
 import com.example.microservice1.Entity.Orders;
 import com.example.microservice1.Entity.Person;
@@ -15,7 +15,7 @@ import java.util.List;
 public class PersonOrderDetails {
     private String fname;
     private String lname;
+    private String personId;
     private String city;
-    private String orderId;
     private BigDecimal orderAmount;
 }
