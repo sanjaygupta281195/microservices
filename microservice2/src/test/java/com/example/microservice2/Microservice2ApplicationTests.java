@@ -1,10 +1,10 @@
-package com.example.microservice1;
+package com.example.microservice2;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class Microservice1ApplicationTests {
+class Microservice2ApplicationTests {
 
 	@Test
 	void contextLoads() {
